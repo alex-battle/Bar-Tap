@@ -1,11 +1,253 @@
 .App {
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: black;
 }
+
+.header{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+  border-bottom: .5px solid lightgrey;
+  text-decoration: none;
+  
+}
+.header :link{
+  color: white;
+}
+.header a{
+  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+  justify-content: right;
+  text-decoration: none;
+  color: lightgrey
+}
+.header :hover{
+  color: orange
+}
+.header :active{
+  color: teal
+}
+.header:visited{
+  color: lightgrey
+}
+
+.cities{
+  display: block;
+  padding: 300px;
+  font-size: 50px;
+  
+}
+.cities a{
+  font-family: 'Roboto Condensed', sans-serif;
+  background-image: url('https://live.staticflickr.com/3207/3845692998_81e551e50c_b.jpg');
+  border: solid;
+  background-size: cover;
+  color: lightgrey;
+  box-sizing: border-box;
+  width: fit-content;
+  padding: 200px;
+  text-decoration: lightgrey;
+
+}
+
+.cities :link{
+  color: white;
+}
+.cities :hover{
+  color: orange;
+  opacity: .6;
+  transition: .3s;
+}
+.cities :active{
+  color: teal
+}
+.cities:visited{
+  color: lightgrey
+}
+.bar-categories{
+  display: block;
+  text-align: center;
+}
+.bar-categories a{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 35px;
+  font-weight: 40px;
+  text-decoration: lightgrey;
+  color: white;
+}
+.bar-categories :link{
+  color: white;
+}
+.bar-categories :hover{
+  color: orange
+}
+.bar-categories :active{
+  color: teal
+}
+.bar-categories:visited{
+  color: lightgrey
+}
+
+.all-bars a{
+background-image: url('https://www.donutsonbed.com/wp-content/uploads/2017/11/skyroom_rooftop_new_york.jpg');  
+display: block;
+padding: 100px;
+}
+
+.all-bars a:hover{
+  opacity: .6;
+  transition: .3s;
+  background-image: url('https://www.donutsonbed.com/wp-content/uploads/2017/11/skyroom_rooftop_new_york.jpg');  
+  padding: 100px;
+}
+
+.lounge-bars a{
+  background-image: url('https://nightclubsinnyc.org/wp-content/uploads/2013/11/Lounges-in-NYC.jpg');  
+  display: block;
+  padding: 100px;
+  }
+  
+  .lounge-bars a:hover{
+    opacity: .6;
+    transition: .3s;
+  }
+
+
+.cocktail-bars a{
+  display: block;
+  padding: 100px;
+  background-image: url('https://pull-littlewanderbook.netdna-ssl.com/wp-content/uploads/2015/03/The-Library.jpg');
+}
+.cocktail-bars a:hover{
+  opacity: .6;
+  transition: .3s;
+}
+.sports-bars a {
+  display: block;
+  padding: 100px;
+  background-image: url('https://trk.localvox.com/sites/default/files/styles/480x240/public/content_images/how_to_eat_healthy_during_the_big_game_at_nycs_best_sports_bar_.jpg?itok=qDS-KqHf');
+}
+.sports-bars a:hover{
+  opacity: .6;
+  transition: .3s;
+}
+.hookah-bars a{
+  display: block;
+  padding: 100px;
+  background-image: url('https://sduptownnews.com/wp-content/uploads/2010/03/hookah.jpg');
+}
+.hookah-bars a:hover{
+  opacity: .6;
+  transition: .3s;
+}
+.dive-bars a{
+  display: block;
+  padding: 100px;
+  background-image: url('https://imbibemagazine.com/wp-content/uploads/2016/12/delilahs-dive-bar-horizontal-crdt-emma-janzen.jpg');
+}
+.dive-bars a:hover{
+  opacity: .6;
+  transition: .3s;
+}
+.whiskey-bars a{
+  display: block;
+  padding: 100px;
+  background-image: url('https://thewhiskeywash.com/wp-content/uploads/2019/04/dingle-whiskeybar.jpg');
+}
+.whiskey-bars a:hover{
+  opacity: .6;
+  transition: .3s;
+}
+
+.trending-results{
+  font-family: 'Roboto Condensed', sans-serif;
+
+  background-size: cover;
+  text-decoration: none;
+  color: lightgrey;
+}
+.results{
+
+  display: block;
+  margin: 100px;
+  padding: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: teal;
+  border-bottom: lightgrey;
+}
+.results h1{
+  font-size: 100px;
+}
+
+.searchBar{
+  display: inline;
+  justify-content: center;
+  padding: 30px;
+  border: solid teal;
+  border-radius: 35px;
+  margin-top: 200px;
+  margin-bottom: 300px;
+  margin-left: 50px;
+  margin-right: 10px;
+  font-size: 50px;
+}
+.searchButton{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.about h1{
+  color: orange
+}
+.about p{
+  color: lightgrey;
+  padding: 30px;
+  text-align: left;
+}
+.error{
+  color: orange;
+}
+.footer{
+  position: fixed;
+  background-color: black;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-top: .5px solid lightgrey;
+  text-decoration: none;
+  
+}
+.footer :link{
+  color: white
+}
+.footer :hover {
+color: teal
+}
+.footer :active {
+  color: orange;
+}
+.footer:visited{
+  color: lightgrey
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,20 +255,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
