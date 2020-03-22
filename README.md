@@ -1,6 +1,7 @@
 # Project Overview
 
 ## BarTap
+Live Site : https://bartap.surge.sh
 
 **Project description:** 
 Search local bars in the area
