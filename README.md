@@ -1,68 +1,124 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Overview
 
-## Available Scripts
+## BarTap
 
-In the project directory, you can run:
+**Project description:** 
+Search local bars in the area
+## API Snippet
 
-### `yarn start`
+https://api.yelp.com/v3/businesses/40-40-club-new-york
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```json
+"id": "B-mnfJNSVNx1t_eQpnF1bA",
+    "alias": "40-40-club-new-york",
+    "name": "40/40 Club",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/3YT_5fTtSoZ6CwWVF0ZwNg/o.jpg",
+    "is_claimed": true,
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/40-40-club-new-york?adjust_creative=uN2tdEdntWbAxGoF9ZLszg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=uN2tdEdntWbAxGoF9ZLszg",
+    "phone": "+12128324040",
+    "display_phone": "(212) 832-4040",
+    "review_count": 603,
+    "categories": [
+        {
+            "alias": "sportsbars",
+            "title": "Sports Bars"
+        },
+        {
+            "alias": "lounges",
+            "title": "Lounges"
+        },
+        {
+            "alias": "venues",
+            "title": "Venues & Event Spaces"
+        }
+    ],
+    "rating": 3.0,
+    "location": {
+        "address1": "6 W 25th St",
+        "address2": "",
+        "address3": "",
+        "city": "New York",
+        "zip_code": "10010",
+        "country": "US",
+        "state": "NY",
+        "display_address": [
+            "6 W 25th St",
+            "New York, NY 10010"
+        ],
+        "cross_streets": "Broadway & 5th Ave"
+    },
+```
+## Wireframes
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+https://imgur.com/a/zXNt84U
 
-### `yarn test`
+### MVP
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Use Yelp or Foursquare's API to search local bars by category and pull up 5-10 top bars. Sort them by Business name, address, hours on one page. Switching between different routes(Home page, bar type, list, and actual bar page). Lastly create a favorites page that saves users' favorite choices.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Post-MVP
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Add a map 
+Add more cities
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## React Component Hierarchy
 
-### `yarn eject`
+https://imgur.com/a/UULsk4N
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Components
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Based on the initial logic defined in the previous section, try to breakdown the logic further into stateless/stateful components. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Component | Description |Type |
+| --- | --- | --- |
+| Header | The Header receives props that render multiple nav titles and links | Functional |
+| Home | Refresh to main page on click | Function |
+| Search | Create search bar that call on API that responds on enter  | Functional |
+| Favorites | Hold favorites after favorite bars have been chosen | State |
+| Main | This component houses multiple rendered views through React Router and controls data received from the initial API call in state | Class |
+| Bar Type | holds different categories and calls the API | Functional |
+| Bar Info | holds 10 choices of bars and stock photo(Post MVP change stock photo into a map) | State |
+| Bar page | Hold info of specific bar after clicked and chosen | State
+| Footer | Navigate to links | Functional
+| About us | Dummy Data | state
+| Contact | Dummy Data some more | State
+| Social Media | icons | State
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Priority Matrix
 
-## Learn More
+https://imgur.com/a/uSYwYTl
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Timeframes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Timeframes are key in the development cycle. You have limited time to code and so much to accomplish!  Look at all of your planned files and components, and all of the areas of development you are planning and give an estimate of how long each one will take to complete. It's always best to pad the time to account for the unknown, so be sure to add an additional hour or two to play it safe. As you progress, you can update the "Time Invested" column to keep track of your hours, but that number should turn into "Actual Time" by the presentation day. Also, put a winter-themed gif at the top of your readme before you pitch to show you read the instructions thoroughly.
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Header | H | 4hrs| --hrs | --hrs |
+| Search Bar | H | 2.5hrs | --hrs
+| Working with API | H | 8hrs| --hrs | --hrs |
+| Clickable Components | H | 14hr | --hrs | --hrs |
+| Styling | H | 6hrs | -hrs | --hrs | 
+| Total | H | 34.5hrs| --hrs | --hrs |
 
-### Analyzing the Bundle Size
+## Project Schedule 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+| Day | Deliverable | Status
+|---|---| ---|
+|Jan 24th| Pitch / Wireframes / Priority Matrix / Functional Components | Incomplete
+|Jan 27th| Set skeleton for routes and all pages/get API working  | Incomplete
+|Jan 28th| Code make everything clickable  code/| Incomplete
+|Jan 29th| CSS MVP | Incomplete
+|Jan 30th| Touch-up/Post-MVP | Incomplete
+|Jan 31tst| Present | Incomplete
 
-### Making a Progressive Web App
+## Additional Libraries
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+React Router Dom
+/
+Axios
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Issues and Resolutions
